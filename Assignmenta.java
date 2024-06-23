@@ -3,54 +3,39 @@ public class Assignmenta{
 
 	public static void main(String[]args){
 		float num1;
-		int number1= 0;
-		num1=(int)number1;
+		int number1= num1;
 		float num2;
-		int number2= 0;
-		num2=(int) number2;
+		int number2= num2;
 
            	int count= 0;
-		double calc;
-			Scanner sc= new Scanner(System.in);
-			System.out.println("Enter your first number");
+		float calc;
+		int temp;
+                temp=(int)calc;
+		Scanner sc= new Scanner(System.in);
+			while(count!=0){
 
-				
-			
+				System.out.println("Enter your first number");
 
+				number1= sc.nextInt();
 
-
-				
-		
-		
-			while(count!=10){
-			
-			number1= sc.nextInt();
-		System.out.println("Enter your second number");
+				System.out.println("Enter your second number");
 
 				number2= sc.nextInt();
 
+				temp= Math.pow(number1,number2);
 
+			System.out.println(" a             b                   pow(a,b) ");
 
-			
+			System.out.printf("  %d            %d                   %d" ,  number1, number2, temp);
 
-																      calc= Math.pow(number1,number2);
-
-				System.out.println(" a             b                   pow(a,b) ");
-
-				System.out.printf("  %d            %d                   %.0f" ,  number1, number2, calc);
-
-
+					}
 
 						}
 
-						}
-		
-						}
-
-			                 
+			System.out.println(" %d            %d                  
 	
 
 
-		
+		}
 
-		
+		}
