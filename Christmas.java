@@ -15,10 +15,10 @@ public class Christmas{
 		System.out.println("Enter the number of verse you want to learn, starting from 0 to 12");
 
 		while(count!=learn){
-		System.out.println("Enter the number of verse you want to learn, starting from 0 to 12");
-
-
+		
 		number= sc.nextInt();
+		number++;
+			
 
 		switch(learn){ 
 		
@@ -221,6 +221,8 @@ case 12:
 	System.out.print("Two turtle doves");
 	System.out.print("And a partridge in a pear tree");
 		break;
+
+		
 
 default:
 
