@@ -1,5 +1,5 @@
 import java.util.Scanner;
-public class Classwork{
+public class Taskjenny5{
 	public static void main(String[]args){
 
 	int number;
@@ -13,8 +13,8 @@ public class Classwork{
 		number= sc.nextInt();
  	
 
-		if(count % 2 == 0)
-			continue;
+		if(score % 2 == 0)
+			
 		
 		
 		sum+=number;
@@ -24,7 +24,7 @@ public class Classwork{
 
 	
 
-	System.out.println("The sum of the even is " + sum);
+	System.out.println("The sum of the odd is " + sum);
 
 
 

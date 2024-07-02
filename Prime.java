@@ -7,7 +7,7 @@ public class Prime{
 		System.out.println("Enter a number of your choice");
 		number= sc.nextInt();
 
-	if(number % 2==1)
+	if(number % number ==1 && number % 3==1)
 
 		System.out.printf(" This number %d is a prime number", number);
 

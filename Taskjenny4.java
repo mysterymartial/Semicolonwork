@@ -1,5 +1,5 @@
 import java.util.Scanner;
-public class Classwork{
+public class Taskjenny4{
 	public static void main(String[]args){
 
 	int number;
@@ -14,7 +14,7 @@ public class Classwork{
  	
 
 		if(count % 2 == 0)
-			continue;
+			
 		
 		
 		sum+=number;
