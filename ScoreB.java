@@ -1,5 +1,5 @@
 import java.util.Scanner;
-public class Score{
+public class ScoreB{
 
 	public static void main(String[]args){
 

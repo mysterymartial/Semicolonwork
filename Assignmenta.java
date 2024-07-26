@@ -2,6 +2,7 @@ import java.util.Scanner;
 public class Assignmenta{
 
 	public static void main(String[]args){
+
 		float num1;
 		int number1= num1;
 		float num2;
