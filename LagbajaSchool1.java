@@ -24,7 +24,7 @@ public class LagbajaSchool1 {
             for (int counter = 0; counter < numberOfSubject; counter++) {
                 System.out.printf("Enter the score for subject %d: ", counter + 1);
                 reportSheet[index][counter] = sc.nextInt();
-                total[index] += reportSheet[index][counter]; // Compute total score
+                total[index] += reportSheet[index][counter]; 
             }
         }
 
@@ -33,16 +33,16 @@ public class LagbajaSchool1 {
         for (int count = 1; count <= numberOfSubject; count++) {
             System.out.printf("%-10s", "Subject " + count);
         }
-        System.out.printf("%-10s%-10s%n", "Total", "Average");
+        System.out.printf("%-10s%-10s%-10s%n", "Total", "Average", "Postion");
 
         
         for (int index = 0; index < numberOfStudent; index++) {
-            System.out.printf("%-10d", index + 1); // Student number
+            System.out.printf("%-10d", index + 1); 
             for (int counter = 0; counter < numberOfSubject; counter++) {
-                System.out.printf("%-10d", reportSheet[index][counter]); // Subject score
+                System.out.printf("%-10d", reportSheet[index][counter]); 
             }
-            double average = (double) total[index] / numberOfSubject; // Compute average
-            System.out.printf("%-10d%-10.2f%n", total[index], average); // Total and Average
+            double average = (double) total[index] / numberOfSubject; 
+            System.out.printf("%-10d%-10.2f%n", total[index], average); 
         }
 
         
