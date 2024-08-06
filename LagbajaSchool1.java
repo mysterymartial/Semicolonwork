@@ -16,6 +16,7 @@ public class LagbajaSchool1 {
      
         int[][] reportSheet = new int[numberOfStudent][numberOfSubject];
         int[] total = new int[numberOfStudent];
+	int [] position = new int[numberOfStudent];
 
         
         for (int index = 0; index < numberOfStudent; index++) {
