@@ -1,3 +1,4 @@
+import java.util.Arrays;
 public class Menstrationapp{
 
 	public int [] hostDate( int month, int day, int year){ 
@@ -34,4 +35,21 @@ public class Menstrationapp{
 
 }
 
+	public int [] flowDate(int startDay, int periodOfFlow, int []calenderOfTwoMonths){
+		int flowDateIndex = 0;
+		int [] flowDays = new int[periodOfFlow];  
+		for(int counter = startDay-1; counter < calenderOfTwoMonths.length; counter++){
+			if (flowDateIndex == 5){
+				counter = calenderOfTwoMonths.length;
+			} else {
+				int flowDate = calenderOfTwoMonths[counter];
+				flowDays[flowDateIndex] = flowDate;
+				flowDateIndex++;
+			}
+
+}
+	System.out.print(Arrays.toString(flowDays));
+	return flowDays;
+}			
+		
 }			

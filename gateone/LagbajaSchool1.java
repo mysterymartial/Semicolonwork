@@ -1,6 +1,6 @@
 
 		
-
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class LagbajaSchool1 {
@@ -22,15 +22,15 @@ public class LagbajaSchool1 {
      
         int[][] reportSheet = new int[numberOfStudent][numberOfSubject];
         int[] total = new int[numberOfStudent];
-	int [] position = new int[numberOfStudent];
-
+			
         
         for (int index = 0; index < numberOfStudent; index++) {
             System.out.printf("Enter the scores for student %d:%n", index + 1);
             for (int counter = 0; counter < numberOfSubject; counter++) {
                 System.out.printf("Enter the score for subject %d: ", counter + 1);
                 reportSheet[index][counter] = sc.nextInt();
-                total[index] += reportSheet[index][counter]; 
+                total[index] += reportSheet[index][counter];
+		 
             }
         }
 
@@ -47,8 +47,10 @@ public class LagbajaSchool1 {
             for (int counter = 0; counter < numberOfSubject; counter++) {
                 System.out.printf("%-10d", reportSheet[index][counter]); 
             }
+
+					 				
             double average = (double) total[index] / numberOfSubject; 
-            System.out.printf("%-10d%-10.2f%n", total[index], average); 
+            System.out.printf("%-10d%-10.2f%n", total[index], average ); 
         }
 
         
