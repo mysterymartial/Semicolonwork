@@ -69,12 +69,13 @@ public class MbtiTest{
 	assertEquals("P", feedback);
 }
 
+	@Test
+	public void checkForPersonality11(){
+	Mbti quiz = new Mbti();
+	String feedback = quiz.getPersonality("E", "S", "T", "J");
+	assertEquals("The Supervisor (ESTJ)ESTJs are organized and governed by the zeal to do what is right and socially acceptable. They epitomize the ideal individual who is on the track toward doing what is “good” and “right”. They are happy to be of help.Their dominant cognitive function is extraverted thinking which makes them quite practical when compared to other personality types. The auxiliary cognitive functions are introverted sensing which makes them very keen on details and stability.The ESTJs like to work in management positions where they can oversee operations and put in structures. In relationships, they love routines and their loved ones know that they can always be depended on for anything.", feedback);
 
 
 
-	
-	
-
-	
-
+}
 }

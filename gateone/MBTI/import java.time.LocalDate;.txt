@@ -1,0 +1,41 @@
+import java.time.LocalDate;
+import java.time.Period;
+import java.util.ArrayList;
+import java.util.List;
+
+public class MenstrualCycleTracker {
+
+    public static List<LocalDate> getFlowDates(LocalDate startDate, LocalDate endDate) {
+        List<LocalDate> flowDates = new ArrayList<>();
+        LocalDate currentDate = startDate;
+        while (!currentDate.isAfter(endDate)) {
+            flowDates.add(currentDate);
+            currentDate = currentDate.plusDays(1);
+        }
+        return flowDates;
+    }
+
+    public static void calculateCycleDetails(LocalDate startDate, LocalDate endDate, int cycleLength, int periodLength) {
+        // Calculate flow dates
+        List<LocalDate> flowDates = getFlowDates(startDate, endDate);
+        
+        // Calculate ovulation day and unsafe period
+        LocalDate cycleStartDate = startDate.minusDays(cycleLength - periodLength);
+        LocalDate ovulationDay = cycleStartDate.plusDays(cycleLength / 2);
+        LocalDate unsafeStartDate = ovulationDay.minusDays(3);
+        LocalDate unsafeEndDate = ovulationDay.plusDays(3);
+
+        // Calculate safe period
+        LocalDate safeStartPeriod = startDate.minusDays(cycleLength);
+        LocalDate safeEndPeriod = endDate.plusDays(cycleLength);
+
+        // Print results
+        System.out.println("Flow Dates:");
+        for (LocalDate date : flowDates) {
+            System.out.println(date);
+        }
+
+        System.out.println("\nSafe Period: " + safeStartPeriod + " to " + safeEndPeriod);
+        System.out.println("Ovulation Day: " + ovulationDay);
+        System.out.println("Unsafe Period: " + unsafeStartDate + "
+
